@@ -6,7 +6,6 @@ import os
 import re
 
 
-
 def part1(data):
     x, y = 0, 0
 
@@ -48,11 +47,11 @@ def part2(data):
 
 def main():
     dirname = os.path.dirname(__file__)
-    inputfile = os.path.join(dirname, 'input.txt')
+    inputfile = os.path.join(dirname, "input.txt")
     with open(inputfile) as f:
         data = f.read().splitlines()
-        print(f"part1: {part1(data)}") # 1728414
-        print(f"part2: {part2(data)}") # 1765720035
+        print(f"part1: {part1(data)}")  # 1728414
+        print(f"part2: {part2(data)}")  # 1765720035
 
 
 if __name__ == "__main__":

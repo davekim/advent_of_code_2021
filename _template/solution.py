@@ -5,7 +5,6 @@
 import os
 
 
-
 def part1(data):
     pass
 
@@ -16,7 +15,7 @@ def part2(data):
 
 def main():
     dirname = os.path.dirname(__file__)
-    inputfile = os.path.join(dirname, 'input.txt')
+    inputfile = os.path.join(dirname, "input.txt")
     with open(inputfile) as f:
         data = f.read().splitlines()
         print(f"part1: {part1(data)}")
