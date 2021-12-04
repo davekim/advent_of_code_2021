@@ -6,10 +6,10 @@ import os
 import re
 
 
-def part1(data):
+def part1(lines):
     x, y = 0, 0
 
-    for line in data:
+    for line in lines:
         m = re.match("(forward|down|up) (\d+)", line)
         command, units = m.groups()
         units = int(units)
@@ -25,10 +25,10 @@ def part1(data):
     return x * y
 
 
-def part2(data):
+def part2(lines):
     x, y, aim = 0, 0, 0
 
-    for line in data:
+    for line in lines:
         m = re.match("(forward|down|up) (\d+)", line)
         command, units = m.groups()
         units = int(units)
@@ -49,9 +49,9 @@ def main():
     dirname = os.path.dirname(__file__)
     inputfile = os.path.join(dirname, "input.txt")
     with open(inputfile) as f:
-        data = f.read().splitlines()
-        print(f"part1: {part1(data)}")  # 1728414
-        print(f"part2: {part2(data)}")  # 1765720035
+        lines = f.read().splitlines()
+        print(f"part1: {part1(lines)}")  # 1728414
+        print(f"part2: {part2(lines)}")  # 1765720035
 
 
 if __name__ == "__main__":

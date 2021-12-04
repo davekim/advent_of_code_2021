@@ -59,9 +59,9 @@ def main():
     dirname = os.path.dirname(__file__)
     inputfile = os.path.join(dirname, "input.txt")
     with open(inputfile) as f:
-        data = f.read().splitlines()
-        print(f"part1: {part1(data)}")  # 2954600
-        print(f"part2: {part2(data)}")  # 1662846
+        lines = f.read().splitlines()
+        print(f"part1: {part1(lines)}")  # 2954600
+        print(f"part2: {part2(lines)}")  # 1662846
 
 
 if __name__ == "__main__":
