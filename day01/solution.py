@@ -5,9 +5,6 @@
 import os
 
 
-dirname = os.path.dirname(__file__)
-inputfile = os.path.join(dirname, 'input.txt')
-
 
 def part1(data):
     previous = float('inf')
@@ -29,8 +26,8 @@ def part2(data):
 
 
 def main():
-    day = os.path.basename(__file__).split('.')[0]
-    print(day)
+    dirname = os.path.dirname(__file__)
+    inputfile = os.path.join(dirname, 'input.txt')
     with open(inputfile) as f:
         data = f.read().splitlines()
         print(f"part1: {part1(data)}") #1681

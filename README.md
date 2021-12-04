@@ -15,8 +15,7 @@ Python 3.8.9
 Example command to invoke the solution for a particular day:
 
 ```sh
-$ python3 day01/day01.py
-day1
+$ python3 day01/solution.py
 part1: 123
 part2: 456
 ```

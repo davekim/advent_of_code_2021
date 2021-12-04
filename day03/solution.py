@@ -6,10 +6,6 @@ import os
 from collections import Counter
 
 
-dirname = os.path.dirname(__file__)
-inputfile = os.path.join(dirname, 'input.txt')
-
-
 
 def part1(lines):
     gamma, epsilon = "", ""
@@ -61,8 +57,8 @@ def part2(lines):
 
 
 def main():
-    day = os.path.basename(__file__).split('.')[0]
-    print(day)
+    dirname = os.path.dirname(__file__)
+    inputfile = os.path.join(dirname, 'input.txt')
     with open(inputfile) as f:
         data = f.read().splitlines()
         print(f"part1: {part1(data)}") # 2954600
